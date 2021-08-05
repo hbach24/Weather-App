@@ -34,12 +34,10 @@ window.addEventListener("load", function () {
         .then((response) => response.json())
         .then((data) => {
           setWeather(data);
+          // loc.textContent = "Current Location"; "used for demo (privacy)"
         });
     }); //end of position
   } //end of if statement
-  else {
-    loc.textContent = "Geolocation unavailable.";
-  }
 });
 
 button.addEventListener("click", function () {
